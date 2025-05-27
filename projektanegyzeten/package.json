@@ -1,0 +1,25 @@
+{
+  "name": "projektanegyzeten",
+  "version": "1.0.0",
+  "description": "A niche website about mechanical keyboards",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run scss:watch & npm run serve",
+    "serve": "live-server --port=3000",
+    "scss": "sass scss/main.scss:css/main.css",
+    "scss:watch": "sass scss/main.scss:css/main.css --watch",
+    "build": "sass scss/main.scss:css/main.css --style=compressed"
+  },
+  "keywords": [
+    "mechanical",
+    "keyboards",
+    "scss",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "sass": "^1.62.1"
+  }
+}
